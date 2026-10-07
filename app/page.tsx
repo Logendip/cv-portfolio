@@ -1,11 +1,9 @@
-
 "use client";
 
 export default function Home() {
   return (
     <main className="cv" id="top">
       <div className="container">
-        {/* Header */}
         <header className="header">
           <div className="header-main">
             <p className="eyebrow">CURRICULUM VITAE</p>
@@ -25,7 +23,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/Logendip"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -44,7 +42,6 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Profile */}
         <section>
           <h2>Profile</h2>
 
@@ -59,7 +56,6 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Technical Skills */}
         <section>
           <h2>Technical Skills</h2>
 
@@ -99,7 +95,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Projects */}
         <section>
           <div className="section-heading">
             <div>
@@ -113,7 +108,6 @@ export default function Home() {
           </div>
 
           <div className="projects">
-            {/* Messenger */}
             <article className="project">
               <div className="project-header">
                 <div>
@@ -153,7 +147,6 @@ export default function Home() {
               </a>
             </article>
 
-            {/* StudenciForm */}
             <article className="project">
               <div className="project-header">
                 <div>
@@ -164,9 +157,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <span className="project-tech">
-                  C# · WinForms · JSON
-                </span>
+                <span className="project-tech">C# · WinForms · JSON</span>
               </div>
 
               <p className="project-description">
@@ -192,20 +183,15 @@ export default function Home() {
               </a>
             </article>
 
-            {/* QuizSolver */}
             <article className="project">
               <div className="project-header">
                 <div>
                   <h3>QuizSolver</h3>
 
-                  <p className="project-type">
-                    WPF desktop application
-                  </p>
+                  <p className="project-type">WPF desktop application</p>
                 </div>
 
-                <span className="project-tech">
-                  C# · WPF · XAML
-                </span>
+                <span className="project-tech">C# · WPF · XAML</span>
               </div>
 
               <p className="project-description">
@@ -230,7 +216,6 @@ export default function Home() {
               </a>
             </article>
 
-            {/* Database */}
             <article className="project">
               <div className="project-header">
                 <div>
@@ -241,9 +226,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <span className="project-tech">
-                  C# · SQL · MySQL
-                </span>
+                <span className="project-tech">C# · SQL · MySQL</span>
               </div>
 
               <p className="project-description">
@@ -270,7 +253,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Education */}
         <section>
           <h2>Education</h2>
 
@@ -278,7 +260,6 @@ export default function Home() {
             <div className="education-header">
               <div>
                 <h3>Silesian University of Technology</h3>
-
                 <p>Faculty of Applied Mathematics</p>
               </div>
 
@@ -297,7 +278,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Languages */}
         <section>
           <h2>Languages</h2>
 
@@ -324,7 +304,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Additional */}
         <section>
           <h2>Additional</h2>
 
@@ -341,7 +320,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Footer */}
         <footer>
           <span>© 2026 Ruslan Balatskyi</span>
 
@@ -349,7 +327,7 @@ export default function Home() {
             <a href="#top">Back to top ↑</a>
 
             <a
-              href="/Ruslan-Balatskyi-CV.pdf"
+              href="/cv-portfolio/Ruslan-Balatskyi-CV.pdf"
               download
               className="download-link"
             >
