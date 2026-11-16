@@ -46,7 +46,9 @@ a:hover {
     text-underline-offset: 3px;
 }
 
-/* Main CV container */
+/* ========================================
+   MAIN CV CONTAINER
+======================================== */
 
 .cv-sheet {
     display: grid;
@@ -59,7 +61,9 @@ a:hover {
     box-shadow: 0 18px 55px rgba(24, 39, 61, 0.13);
 }
 
-/* Sidebar */
+/* ========================================
+   SIDEBAR
+======================================== */
 
 .sidebar {
     position: relative;
@@ -195,8 +199,20 @@ a:hover {
     text-transform: uppercase;
 }
 
-.contact-list a {
-    color: #fff;
+/* Sidebar links */
+
+.sidebar a {
+    color: var(--gold-light);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    overflow-wrap: anywhere;
+}
+
+.sidebar a:hover {
+    color: #ffffff;
+    border-bottom-color: var(--gold);
 }
 
 /* Skills */
@@ -238,7 +254,9 @@ a:hover {
     font-weight: 600;
 }
 
-/* Main column */
+/* ========================================
+   MAIN COLUMN
+======================================== */
 
 .main-column {
     min-width: 0;
@@ -310,63 +328,9 @@ a:hover {
     line-height: 1.7;
 }
 
-/* Projects */
-
-.project {
-    padding: 15px 0 16px;
-    border-bottom: 1px solid var(--line);
-}
-
-.project:first-of-type {
-    padding-top: 2px;
-}
-
-.project:last-child {
-    border-bottom: 0;
-    padding-bottom: 0;
-}
-
-.project-heading {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 12px;
-}
-
-.project h3,
-.education h3,
-.certificate-info h3 {
-    color: #26354a;
-    font-size: 14px;
-    font-weight: 750;
-}
-
-.project-heading span {
-    color: #778398;
-    font-size: 10px;
-    text-align: right;
-}
-
-.project ul {
-    margin: 8px 0 0 17px;
-    color: #566174;
-    font-size: 11px;
-}
-
-.project li {
-    margin-top: 3px;
-    padding-left: 2px;
-}
-
-.text-link {
-    display: inline-block;
-    margin-top: 8px;
-    color: var(--blue);
-    font-size: 11px;
-    font-weight: 700;
-}
-
-/* Education */
+/* ========================================
+   EDUCATION
+======================================== */
 
 .education {
     padding: 15px 17px;
@@ -382,7 +346,9 @@ a:hover {
 }
 
 .education h3 {
+    color: #26354a;
     font-size: 13px;
+    font-weight: 750;
 }
 
 .institution,
@@ -403,10 +369,14 @@ a:hover {
     color: #29374a;
 }
 
-/* Certificate */
+/* ========================================
+   CERTIFICATE
+======================================== */
 
 .certificate-card {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 14px;
     padding: 15px;
@@ -429,7 +399,14 @@ a:hover {
 }
 
 .certificate-info {
+    flex: 1;
     min-width: 0;
+}
+
+.certificate-info h3 {
+    color: #26354a;
+    font-size: 14px;
+    font-weight: 750;
 }
 
 .certificate-info p {
@@ -452,11 +429,25 @@ a:hover {
 .certificate-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 8px 14px;
+    margin-top: 12px;
 }
 
 .certificate-actions .text-link {
-    margin-top: 7px;
+    display: inline-block;
+    margin-top: 0;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--gold);
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.certificate-actions .text-link:hover {
+    color: var(--blue-dark);
+    border-bottom-width: 2px;
 }
 
 /* Certificate preview */
@@ -489,7 +480,74 @@ a:hover {
     font-size: 10px;
 }
 
-/* Footer */
+/* ========================================
+   PROJECTS
+======================================== */
+
+.project {
+    padding: 15px 0 16px;
+    border-bottom: 1px solid var(--line);
+}
+
+.project:first-of-type {
+    padding-top: 2px;
+}
+
+.project:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.project-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.project h3 {
+    color: #26354a;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.project-heading span {
+    color: #778398;
+    font-size: 10px;
+    text-align: right;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-top: 10px;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid var(--blue-light);
+    border-radius: 5px;
+    background: #f2f6fc;
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.project-links a:hover {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #ffffff;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
 
 .cv-footer {
     display: flex;
@@ -502,7 +560,9 @@ a:hover {
     font-size: 9px;
 }
 
-/* Download PDF button */
+/* ========================================
+   DOWNLOAD PDF BUTTON
+======================================== */
 
 .cv-download {
     margin-top: 24px;
@@ -533,7 +593,9 @@ a:hover {
     transform: translateY(-2px);
 }
 
-/* Tablet and mobile */
+/* ========================================
+   TABLET AND MOBILE
+======================================== */
 
 @media (max-width: 760px) {
     body {
@@ -594,37 +656,38 @@ a:hover {
     }
 }
 
-/* A4 print / Save as PDF */
+/* ========================================
+   A4 PRINT / PDF
+======================================== */
 
 @page {
-    size: A4;
+    size: A4 portrait;
     margin: 0;
 }
 
 @media print {
+
     html,
     body {
         width: 210mm;
+        height: auto;
         min-height: 0;
-        margin: 0;
-        padding: 0;
-        background: #ffffff;
-        print-color-adjust: exact !important;
-        -webkit-print-color-adjust: exact !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
     }
 
     body {
-        font-size: 9pt;
-
-        /* Use normal font rendering in PDF */
-        -webkit-font-smoothing: auto;
-        text-rendering: auto;
+        font-size: 8pt;
+        line-height: 1.35;
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
     }
 
     * {
         animation: none !important;
         transition: none !important;
-        filter: none !important;
+        box-shadow: none !important;
     }
 
     .cv-download {
@@ -632,181 +695,239 @@ a:hover {
     }
 
     .cv-sheet {
-        display: grid;
-        grid-template-columns: 34% 66%;
-        width: 210mm;
-        min-height: 297mm;
-        margin: 0;
-        overflow: visible;
-        box-shadow: none;
+        display: grid !important;
+        grid-template-columns: 34% 66% !important;
+        width: 210mm !important;
+        min-height: 297mm !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        box-shadow: none !important;
     }
 
     /* Sidebar */
 
     .sidebar {
+        min-width: 0;
         overflow: hidden;
         print-color-adjust: exact !important;
         -webkit-print-color-adjust: exact !important;
     }
 
     .sidebar-inner {
-        position: relative;
-        padding: 8mm 7mm;
+        padding: 7mm 6mm 6mm;
     }
 
     .profile-photo {
-        width: 29mm;
-        height: 29mm;
-        margin: 0 auto 5mm;
+        width: 27mm;
+        height: 27mm;
+        margin: 0 auto 4mm;
+        padding: 1mm;
     }
 
     .profile-photo img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
     .side-section {
-        margin-top: 4mm;
-        padding-top: 3mm;
+        margin-top: 3.5mm;
+        padding-top: 2.5mm;
     }
 
     .side-section h2 {
-        margin-bottom: 2.5mm;
-        font-size: 9pt;
+        margin-bottom: 2mm;
+        font-size: 8pt;
+    }
+
+    .side-section h2::before {
+        height: 3mm;
     }
 
     .contact-list {
-        gap: 2mm;
+        gap: 1.8mm;
     }
 
     .contact-list li {
-        font-size: 8.5pt;
+        gap: 0.3mm;
+        font-size: 7.5pt;
+        line-height: 1.3;
     }
 
     .side-label {
+        font-size: 6.5pt;
+    }
+
+    .sidebar a {
+        color: var(--gold-light) !important;
         font-size: 7.5pt;
+        text-decoration: none !important;
     }
 
     .skill-group {
-        margin-top: 3mm;
+        margin-top: 2.5mm;
     }
 
     .skill-group h3 {
-        margin-bottom: 1mm;
-        font-size: 8.5pt;
+        margin-bottom: 0.5mm;
+        font-size: 7.5pt;
     }
 
     .skill-group p {
-        font-size: 8pt;
-        line-height: 1.4;
+        font-size: 7pt;
+        line-height: 1.35;
     }
 
     .plain-list {
-        gap: 2mm;
+        gap: 1.5mm;
     }
 
     .plain-list li {
-        font-size: 8.5pt;
+        font-size: 7.5pt;
     }
 
     .plain-list strong {
-        font-size: 8pt;
+        font-size: 7pt;
     }
 
     /* Main column */
 
     .main-column {
         min-width: 0;
-        padding: 9mm 8mm 5mm;
+        padding: 8mm 7mm 5mm;
     }
 
     .cv-header h1 {
-        font-size: 28pt;
-        line-height: 1;
+        font-size: 27pt;
+        line-height: 0.98;
     }
 
     .role-heading {
-        margin-top: 3mm;
+        margin-top: 2.5mm;
     }
 
     .role {
-        font-size: 11pt;
+        font-size: 10pt;
     }
 
     .header-summary {
         margin-top: 2mm;
-        font-size: 9pt;
-        line-height: 1.4;
+        font-size: 8pt;
+        line-height: 1.35;
     }
 
+    /* Sections */
+
     .main-section {
-        margin-top: 4mm;
+        margin-top: 3.5mm;
+        break-inside: auto;
     }
 
     .main-section h2 {
-        margin-bottom: 2.5mm;
-        font-size: 9pt;
+        margin-bottom: 2mm;
+        font-size: 8pt;
+    }
+
+    .main-section > p,
+    .education > p,
+    .project > p {
+        margin-top: 1.5mm;
+        font-size: 7.5pt;
+        line-height: 1.35;
     }
 
     /* Education */
 
     .education {
-        padding: 2.5mm 3mm;
+        padding: 2mm 2.5mm;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .education-heading {
+        gap: 2mm;
     }
 
     .education h3 {
-        font-size: 9pt;
+        font-size: 8pt;
     }
 
     .institution,
     .date {
-        font-size: 8pt;
+        font-size: 7pt;
     }
 
     .education > p {
-        margin-top: 1.5mm;
-        font-size: 8.5pt;
-        line-height: 1.4;
+        margin-top: 1mm;
+        font-size: 7.5pt;
     }
 
-    /* Certificate */
+    /* Certificate - horizontal layout */
 
     .certificate-card {
-        gap: 2mm;
-        padding: 2.5mm;
+        display: grid !important;
+        grid-template-columns: 9mm minmax(0, 1fr) !important;
+        grid-template-rows: auto !important;
+        align-items: center !important;
+        gap: 2mm !important;
+        width: 100% !important;
+        padding: 2mm !important;
+        border: 1px solid var(--line) !important;
+        border-radius: 2mm !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .certificate-icon {
-        flex: 0 0 9mm;
-        width: 9mm;
-        height: 11mm;
-        font-size: 8pt;
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        width: 9mm !important;
+        height: 11mm !important;
+        font-size: 7pt;
+    }
+
+    .certificate-info {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+        min-width: 0 !important;
+        width: 100% !important;
     }
 
     .certificate-info h3 {
-        font-size: 9pt;
+        font-size: 8pt;
     }
 
     .certificate-info p {
-        font-size: 8pt;
-        line-height: 1.35;
-    }
-
-    .certificate-info ul {
-        margin: 2mm 0 0 4mm;
-        font-size: 7.5pt;
+        margin-top: 1mm;
+        font-size: 7pt;
         line-height: 1.3;
     }
 
+    .certificate-info ul {
+        margin: 1.5mm 0 0 3mm;
+        font-size: 6.7pt;
+        line-height: 1.25;
+    }
+
     .certificate-info li {
-        margin-top: 1mm;
+        margin-top: 0.5mm;
+        padding-left: 0.5mm;
     }
 
     .certificate-actions {
-        gap: 3mm;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1mm 3mm;
+        margin-top: 1.5mm;
     }
 
     .certificate-actions .text-link {
-        margin-top: 2mm;
+        margin-top: 0;
+        padding-bottom: 0.3mm;
+        color: var(--blue) !important;
+        font-size: 7pt;
+        border-bottom: 1px solid var(--gold) !important;
     }
 
     /* Projects */
@@ -817,55 +938,77 @@ a:hover {
         page-break-inside: avoid;
     }
 
+    .project:first-of-type {
+        padding-top: 0;
+    }
+
+    .project:last-child {
+        padding-bottom: 0;
+    }
+
     .project-heading {
-        gap: 2mm;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1.5mm;
     }
 
     .project h3 {
-        font-size: 9.5pt;
+        font-size: 8.5pt;
     }
 
     .project-heading span {
-        font-size: 7.5pt;
+        font-size: 6.5pt;
+        text-align: right;
     }
 
     .project > p {
         margin-top: 1mm;
-        font-size: 8pt;
-        line-height: 1.35;
-    }
-
-    .project ul {
-        margin-top: 1.5mm;
-        font-size: 8pt;
-    }
-
-    .project li {
-        margin-top: 0.5mm;
-    }
-
-    .text-link {
-        margin-top: 1mm;
-        font-size: 8pt;
+        font-size: 7pt;
+        line-height: 1.3;
     }
 
     .project-links {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1mm;
-        margin-top: 1mm;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1mm 2mm;
+        margin-top: 1.5mm;
     }
 
-    /* Other elements */
+    .project-links a {
+        display: inline-block;
+        padding: 0.7mm 1.5mm;
+        border: 1px solid var(--blue-light) !important;
+        border-radius: 1mm;
+        background: #f2f6fc !important;
+        color: var(--blue) !important;
+        font-size: 6.5pt;
+        font-weight: 700;
+        text-decoration: none !important;
+    }
+
+    /* Hide unnecessary elements */
 
     .certificate-preview,
     .cv-footer {
         display: none !important;
     }
 
+    /* Prevent unwanted link formatting */
+
     a {
-        color: inherit;
-        text-decoration: none;
+        text-decoration: none !important;
     }
+
+    /* Print pagination */
+
+    .cv-sheet,
+    .sidebar,
+    .main-column {
+        break-inside: avoid;
+    }
+
 }
