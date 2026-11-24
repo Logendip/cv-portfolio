@@ -911,15 +911,16 @@ a:hover {
 
     .main-section h2 {
         margin-bottom: 2mm;
-        font-size: 8pt;
+        font-size: 9.5pt;
     }
 
     .main-section > p,
     .education > p,
     .project > p {
         margin-top: 1mm;
-        font-size: 7.5pt;
-        line-height: 1.3;
+        color: #3f4a5a;
+        font-size: 8.5pt;
+        line-height: 1.35;
     }
 
     .main-skills-grid {
@@ -927,25 +928,26 @@ a:hover {
     }
 
     .main-skills .skill-group {
-        padding: 1.5mm 2mm;
+        padding: 2mm 2.5mm;
         break-inside: avoid;
         page-break-inside: avoid;
     }
 
     .main-skills .skill-group h3 {
-        margin-bottom: 0.3mm;
-        font-size: 7.5pt;
+        margin-bottom: 0.5mm;
+        font-size: 8.5pt;
     }
 
     .main-skills .skill-group p {
-        font-size: 7pt;
-        line-height: 1.25;
+        color: #3f4a5a;
+        font-size: 8pt;
+        line-height: 1.3;
     }
 
     /* Education */
 
     .education {
-        padding: 1.5mm 2mm;
+        padding: 2mm 2.5mm;
         break-inside: avoid;
         page-break-inside: avoid;
     }
@@ -955,17 +957,18 @@ a:hover {
     }
 
     .education h3 {
-        font-size: 8pt;
+        font-size: 9pt;
     }
 
     .institution,
     .date {
-        font-size: 7pt;
+        color: #596579;
+        font-size: 8pt;
     }
 
     .education > p {
         margin-top: 0.8mm;
-        font-size: 7.5pt;
+        font-size: 8.5pt;
     }
 
     /* Certificate - horizontal layout */
@@ -1039,7 +1042,7 @@ a:hover {
     /* Projects */
 
     .project {
-        padding: 1.5mm 0;
+        padding: 2mm 0;
         break-inside: avoid;
         page-break-inside: avoid;
     }
@@ -1061,18 +1064,19 @@ a:hover {
     }
 
     .project h3 {
-        font-size: 8pt;
+        font-size: 9pt;
     }
 
     .project-heading span {
-        font-size: 6.5pt;
+        color: #596579;
+        font-size: 7.5pt;
         text-align: right;
     }
 
     .project > p {
-        margin-top: 0.8mm;
-        font-size: 7pt;
-        line-height: 1.25;
+        margin-top: 1mm;
+        font-size: 8pt;
+        line-height: 1.3;
     }
 
     .project-links {
@@ -1081,17 +1085,17 @@ a:hover {
         flex-wrap: wrap;
         align-items: center;
         gap: 1mm 2mm;
-        margin-top: 1mm;
+        margin-top: 1.5mm;
     }
 
     .project-links a {
         display: inline-block;
-        padding: 0.7mm 1.3mm;
+        padding: 1mm 1.5mm;
         border: 1px solid var(--blue-light) !important;
         border-radius: 1mm;
         background: #f2f6fc !important;
         color: var(--blue) !important;
-        font-size: 6.5pt;
+        font-size: 7.5pt;
         font-weight: 700;
         text-decoration: none !important;
     }
@@ -1100,9 +1104,9 @@ a:hover {
         display: block !important;
         margin-top: 2mm;
         padding-top: 1.5mm;
-        color: #687386;
-        font-size: 5.5pt;
-        line-height: 1.15;
+        color: #4f5b6d;
+        font-size: 6pt;
+        line-height: 1.2;
     }
 
     /* Hide unnecessary elements */
